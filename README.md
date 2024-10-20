@@ -5,6 +5,10 @@
 # Photon
 
 This project was made by team `cuckoo banana` for Syntax Error 2024.
+Akshat Srivastava 24114010
+Gravit Sharma 24116035
+Satindra Ramalingam 24114087
+Tanmay Arya 24114099
 
 # Download
 
