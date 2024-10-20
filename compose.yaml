@@ -1,0 +1,32 @@
+services:
+    orchestrator:
+        image: photon-orchestrator:latest
+        ports:
+            - 35560:8080
+        environment:
+            AUTH_SERVER: http://photon-auth:8080
+            DB_SERVER: http://photon-db:8080
+            REDIRECT_SERVER: https://photon.garvit.tech
+            GOOGLE_APPLICATION_CREDENTIALS: /code/app/json.json
+        restart: always
+
+    photon-db:
+        image: photon-db:latest
+        restart: always
+
+    photon-auth:
+        image: photon-auth:latest
+        restart: always
+
+    photon-imagedb:
+        image: photon-imagedb:latest
+        ports:
+            - 35562:8080
+        environment:
+            AUTH_SERVER: http://photon-auth:8080
+        volumes:
+            - photon-imagedb:/app/Images
+        restart: always
+
+volumes:
+    photon-imagedb:
