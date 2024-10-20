@@ -8,7 +8,7 @@ This project was made by team `cuckoo banana` for Syntax Error 2024.
 
 # Download
 
-You can download the app from [My website](https://photon.garvit.tech)
+You can download the app from [Github Releases](https://github.com/phot-ON/Photon/releases)
 
 Only available for android because apple 💀
 
